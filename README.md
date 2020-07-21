@@ -20,7 +20,7 @@ ICCV 2017の[Unpaired Image-to-Image Translation using Cycle-Consistent Adversar
     - test.py
     - train_test.sh
 ## データセットのダウンロード
-まずは以下のコマンドを使って使いたいデータセットをダウンロードしましょう。
+まずは以下のコマンドを使って画像変換を行いたいデータセットをダウンロードしましょう。
 ```Shell
 sh get_dataset.sh file_name
 ```
