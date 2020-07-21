@@ -28,7 +28,7 @@ mv "$TARGET/trainA" "./data/train/A"
 mv "$TARGET/trainB" "./data/train/B"
 mv "$TARGET/testA" "./data/test/A"
 mv "$TARGET/testB" "./data/test/B"
-mv "$TARGET/valA" "./data/val/A"
-mv "$TARGET/valB" "./data/val/B"
+#mv "$TARGET/valA" "./data/val/A"
+#mv "$TARGET/valB" "./data/val/B"
 
 rm -rf $FILE
