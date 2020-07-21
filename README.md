@@ -59,7 +59,7 @@ file_nameにはダウンロードしたいデータセットの名前を代入�
 - ae_photos.
 
 ## CycleGANの学習とテストを行う
-データセットのダウンロードが完了したら、学習とテストをしましょう。
+データセットのダウンロードが完了したら、以下のコマンドでCycleGANの学習とテストをしましょう。
 エポック数は100に設定しています。
 ```Shell
 sh train_test.sh save_result_folder_name cuda_number
