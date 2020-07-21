@@ -10,6 +10,7 @@ import random
 import os
 import torchvision.utils as vutils
 import itertools
+import sys
 
 from custom_dataset import CustomDataset
 from custom_dataset import data_transforms
@@ -19,6 +20,8 @@ from model import Discriminator
 
 os.environ["OMP_NUM_THREADS"] = "1"
 
+args = sys.argv#コマンドライン引数
+
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 print(device)
 
@@ -26,7 +29,9 @@ batch = 1
 epoch_size = 100
 lr_d = 0.000014
 lr_g = 0.0002
-main_folder = "./result/D000014G0002_model_save" #結果などのデータを入れる場所
+
+main_folder = os.path.join("./result", args[1])
+#main_folder = "./result/D000014G0002_model_save" #結果などのデータを入れる場所
 print(main_folder)
 
 os.makedirs(main_folder, exist_ok=True)
