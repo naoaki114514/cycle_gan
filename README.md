@@ -56,7 +56,7 @@ file_nameにはダウンロードしたいデータセットの名前を代入�
 - cityscapes
 - facades
 - iphone2dslr_flower
-- ae_photos.
+- ae_photos
 
 ## CycleGANの学習とテストを行う
 データセットのダウンロードが完了したら、以下のコマンドでCycleGANの学習とテストをしましょう。
