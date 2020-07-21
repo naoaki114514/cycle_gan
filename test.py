@@ -150,3 +150,6 @@ def main(netG_A2B, netG_B2A, netD_A, netD_B, criterion_GAN, criterion_cycle, opt
 
         print("loss_test_G_A2B : {0:.10f} loss_test_G_B2A {1:.10f} loss_test_cycle {2:.10f} loss_test_D_A {3:.10f} loss_test_D_B {4:.10f}".format(loss_test_G_A2B, loss_test_G_B2A, loss_test_cycle, loss_test_D_A, loss_test_D_B))
     
+if __name__ == '__main__':
+    main(netG_A2B=netG_A2B, netG_B2A=netG_B2A, netD_A=netD_A, netD_B=netD_B, criterion_GAN=criterion_GAN, criterion_cycle=criterion_cycle, optimizerG=optimizerG, optimizerD_A=optimizerD_A, optimizerD_B=optimizerD_B, batch=batch)
+    print("test finish")
