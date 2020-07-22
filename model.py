@@ -17,13 +17,13 @@ class ResNetBlock(nn.Module):
         conv_block = []
         conv_block += [nn.ReflectionPad2d(1),
                        nn.Conv2d(dim, dim, kernel_size=3),
-                       nn.InstanceNorm2d(dim),
-                       #nn.BatchNorm2d(dim),
+                       #nn.InstanceNorm2d(dim),
+                       nn.BatchNorm2d(dim),
                        nn.LeakyReLU(0.2),
                        nn.ReflectionPad2d(1),
                        nn.Conv2d(dim, dim, kernel_size=3),
-                       #nn.BatchNorm2d(dim)
-                       nn.InstanceNorm2d(dim)
+                       nn.BatchNorm2d(dim)
+                       #nn.InstanceNorm2d(dim)
                        ]
         self.conv_block = nn.Sequential(*conv_block)
 
